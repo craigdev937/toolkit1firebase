@@ -1,0 +1,21 @@
+.main {
+    margin: auto;
+    padding: 15px;
+    max-width: 1200px;
+    align-content: center;
+}
+
+.main__img {
+    width: 500px;
+    height: auto;
+}
+
+.btn__delete {
+    background-color: #dd4b39;
+}
+
+.btn__edit {
+    background-color: blue;
+}
+
+
