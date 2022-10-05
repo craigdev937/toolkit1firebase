@@ -49,7 +49,20 @@ export const Home = () => {
                             to={`/detail/${item.id}`}
                             >Read More
                         </Link>
-                    </aside>                    
+                    </aside>
+                    <aside>
+                        <button 
+                            className="btn__delete"
+                            onClick={() => handleDelete(item.id)}
+                            >Delete
+                        </button>
+                        <Link to={`/update/${item.id}`}>
+                            <button 
+                                className="btn__edit"
+                                >Edit
+                            </button>
+                        </Link>
+                    </aside>
                 </section>                
             ))}
         </main>
