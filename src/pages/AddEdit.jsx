@@ -75,8 +75,8 @@ export const AddEdit = () => {
                 toast.success("The Blog was added!");
                 navigate("/");
             } else {
-                await updateBlog(id, blog);
-                toast.update("The Blog was updated!");
+                await updateBlog({id, data});
+                toast.success("The Blog was updated!");
                 navigate("/");
             }
         }
